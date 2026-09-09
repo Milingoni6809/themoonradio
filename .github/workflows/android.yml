@@ -26,8 +26,8 @@ jobs:
 
       - name: Build Debug APK and Release AAB
         run: |
-          ./app:gradlew assembleDebug
-          ./app:gradlew bundleRelease
+          ./gradlew app:assembleDebug
+          ./gradlew app:bundleRelease
 
       - name: Upload APK Artifact
         uses: actions/upload-artifact@v4
